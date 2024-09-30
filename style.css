@@ -1,0 +1,441 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* header styles */
+
+.header {
+    background-color: #181511;
+    padding: 14px 0px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    display: inline-block;
+    width: 50px;
+    aspect-ratio: 1;
+    margin-right: 15px;
+}
+
+.logo span {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #ffae2b;
+}
+
+.cta a {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    border: #fff solid 1px;
+    padding: 15px 25px;
+    transition: 0.7s;
+}
+.cta a:hover {
+    color: #ffae2b;
+    border-color: #ffae2b;
+}
+
+/* banner styles */
+
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/banner.jpg);
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.h1-title {
+    font-size: 60px;
+    line-height: 80px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin-bottom: 45px;
+}
+
+.banner p {
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffae2b;
+    margin-bottom: 45px;
+}
+
+/* products styles */
+.products {
+    background-color: #181511;
+    padding-block: 60px;
+}
+.h2-title {
+    font-size: 45px;
+    line-height: 120%;
+    text-align: center;
+    color: #ffae2b;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5em;
+    row-gap: 2.8em;
+}
+
+.card img {
+    display: block;
+    margin-bottom: 1em;
+}
+
+.h3-title {
+    font-size: 24px;
+    line-height: 120%;
+    color: #ffae2b;
+    margin-bottom: 1.2em;
+}
+
+.card p {
+    font-size: 18px;
+    line-height: 120%;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.price {
+    font-size: 24px;
+    line-height: 120%;
+    color: #ffae2b;
+}
+
+.products .card {
+    display: flex;
+    flex-direction: column;
+}
+
+/* slider section */
+.our-slider {
+    background-color: #fff;
+    padding-top: 60px;
+}
+
+.slide {
+    position: relative;
+}
+
+.slide h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    font-size: 45px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.slide h3::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    inset: -.5em;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.slick-prev {
+    left: 35px;
+    z-index: 12;
+}
+
+.slick-prev {
+    left: 35px;
+    z-index: 12;
+}
+
+.slick-next {
+    right: 35px;
+    z-index: 12;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #ffae2b;
+    opacity: .8;
+    font-size: 35px;
+}
+
+/* advantages section styles */
+
+.advantages {
+    background-color: #181511;
+    padding-block: 60px;
+}
+
+.advantages .card {
+    text-align: center;
+}
+
+.advantages .card img {
+    margin: 0 auto 25px;
+}
+
+/* faq section styles */
+
+.faq {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.program {
+    background-color: #181511;
+    margin-bottom: 1em;
+}
+.program__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    cursor: pointer;
+}
+
+.program__icon {
+    fill: #ffae2b;
+    stroke: #181511;
+    width: 45px;
+    aspect-ratio: 1;
+    transition: all 0.4s;
+}
+
+.program__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s;
+    padding: 0 1.5rem;
+    color: #fff;
+}
+
+.program__intro {
+    line-height: 120%;
+    font-size: 18px;
+}
+
+.program__header h4{
+    text-transform: uppercase;
+    color: #ffae2b;
+    font-size: 1.3em;
+}
+
+/* form section styles */
+.contact-section {
+    background-color: #ffae2b;
+    padding: 60px 0;
+}
+
+.contact-form {
+    max-width: 600px;
+    width: 100%;
+    padding: 40px;
+    background: #181511;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-form input {
+    display: inline-block;
+    width: calc(50% - 10px);
+    padding: 10px 20px;
+    background: none;
+    border: 1px solid #ffae2b;
+    color: #fff;
+}
+
+.contact-form .cta {
+ margin: 0 auto;
+}
+
+/* footer sectioon styles */
+
+.footer {
+    background-color: #181511;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer a {
+    color: #ffae2b;
+    margin-left: 10px;
+}
+
+.footer-contact i{
+font-size: 25px;
+margin-left: 10px;
+}
